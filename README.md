@@ -1,5 +1,8 @@
 # simple-control 一个可扩展的后台管理模板
 
+### 项目使用JWT进行权限验证
+开发过程中使用的[DuckyGo(一个同时支持Session以及JWT的高性能高可用 Golang Restful API 脚手架 ！)](https://github.com/L-HeliantHuS/DuckyGo)作为后端. 
+
 ### SRC目录结构
 ```
 ├─api        // 存放用来和后端交互的API
