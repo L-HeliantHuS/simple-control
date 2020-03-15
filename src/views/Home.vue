@@ -1,18 +1,26 @@
-<template>
-  <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
-  </div>
+<template lang="pug">
+  div.Home()
+  	span(class="title") Welcome to the #[zi-code Simple-Control]
+  
 </template>
 
 <script>
 // @ is an alias to /src
-import HelloWorld from '@/components/HelloWorld.vue'
 
 export default {
   name: 'Home',
-  components: {
-    HelloWorld
-  }
+  data: () => ({
+  
+  }),
 }
 </script>
+
+<style scoped lang="stylus">
+	
+	.Home
+		display flex
+	.title
+		margin: 400px auto
+		font-size 3rem
+	
+</style>
