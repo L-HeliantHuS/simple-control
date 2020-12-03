@@ -41,7 +41,7 @@
             response => {
               if (response.code === 0) {
                 // 将获取的JWT Token放入LocalStorage
-                localStorage.setItem("simple_admin_access_token", response.data);
+                localStorage.setItem("simple_admin_access_token", response.data.access_token);
 
                 // 跳转到管理页面
                 this.$router.push({name: "home"});
